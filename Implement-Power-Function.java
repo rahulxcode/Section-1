@@ -1,3 +1,4 @@
+import java.lang.Math;
 public class Solution {
 	public int pow(int x, int n, int d) 
 	{
@@ -14,14 +15,14 @@ public class Solution {
         {
 		if(x<0)
 		{
-			x = abs(x);
+			x = Math.abs(x);
 			return (x%d);
 		}
         return(x%d);
         }
 	else
 	{
-		long long rem= x%d;
+		long rem= x%d;
 		long mul= 1;
 		while(temp!=0)
 		{
